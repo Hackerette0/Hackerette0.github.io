@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Sucharitha B</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=Caveat:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .projects-list { display: flex; flex-direction: column; padding-bottom: 80px; }
+
+    .project-entry {
+      padding: 44px 0;
+      border-bottom: 1px solid var(--border);
+      display: grid;
+      grid-template-columns: 1fr 32px;
+      gap: 32px;
+      align-items: start;
+      text-decoration: none;
+      color: var(--text);
+      transition: padding-left 0.25s ease;
+    }
+    .project-entry:first-child { border-top: 1px solid var(--border); }
+    .project-entry:hover { padding-left: 14px; }
+
+    .project-label {
+      font-family: var(--hand);
+      font-size: 0.95rem;
+      color: var(--accent);
+      display: block;
+      margin-bottom: 10px;
+    }
+    .project-entry-title {
+      font-family: var(--serif);
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      margin-bottom: 14px;
+    }
+    .project-summary {
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.75;
+      max-width: 600px;
+    }
+    .project-tech { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+    .tech-tag {
+      font-size: 0.75rem;
+      padding: 4px 12px;
+      border-radius: 100px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      background: var(--warm-white);
+    }
+    .project-arrow {
+      font-size: 1.3rem;
+      color: var(--muted);
+      margin-top: 6px;
+      transition: color 0.2s, transform 0.25s;
+      line-height: 1;
+    }
+    .project-entry:hover .project-arrow { color: var(--accent); transform: rotate(45deg); }
+
+    /* Colour-tinted entries */
+    .project-entry.tint-pink  { background: linear-gradient(to right, #fce9e900, #fce9e920); }
+    .project-entry.tint-sage  { background: linear-gradient(to right, #e5ede000, #e5ede020); }
+    .project-entry.tint-peach { background: linear-gradient(to right, #fdebd800, #fdebd820); }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Sucharitha ✿</a>
+    <ul class="nav-links">
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="mailto:bathalasucharitha79@gmail.com">Say hello ✉︎</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+
+    <header class="page-header">
+      <span class="page-deco">✦ Everything I've built</span>
+      <h1 class="page-title">Projects</h1>
+      <p class="page-desc">
+        Full-stack platforms, AI-powered systems, and backend architecture —
+        a collection of the work I'm most proud of.
+      </p>
+    </header>
+
+    <div class="projects-list">
+
+      <a href="#oly" class="project-entry tint-pink" id="oly">
+        <div>
+          <span class="project-label">Full-Stack · MERN · Generative AI</span>
+          <h2 class="project-entry-title">Ōly — AI Luxury Skincare Platform</h2>
+          <p class="project-summary">
+            Built a full-stack luxury skincare e-commerce platform with React, Node.js,
+            Express, MongoDB, and the OpenAI API. Features include real-time skin analysis,
+            RAG-based personalised product recommendations, a Skin Diary with weekly photo
+            uploads and AI hydration & acne scoring with progress charts, a personal colour
+            harmony analyser, and an AI-moderated community forum.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Express</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">OpenAI API</span>
+            <span class="tech-tag">RAG</span>
+          </div>
+        </div>
+        <span class="project-arrow">↗</span>
+      </a>
+
+      <a href="#rasa" class="project-entry tint-sage" id="rasa">
+        <div>
+          <span class="project-label">AI · NLP · Healthcare</span>
+          <h2 class="project-entry-title">RASA Medical Chatbot</h2>
+          <p class="project-summary">
+            Developed an AI-powered medical chatbot using the RASA framework and TensorFlow,
+            with NLP integration for intelligent healthcare query responses, automatic anomaly
+            detection, and 85% accurate disease prediction. Designed to assist patients with
+            preliminary health guidance through natural, conversational interaction.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">RASA</span>
+            <span class="tech-tag">TensorFlow</span>
+            <span class="tech-tag">NLP</span>
+            <span class="tech-tag">Python</span>
+          </div>
+        </div>
+        <span class="project-arrow">↗</span>
+      </a>
+
+      <a href="#springboot" class="project-entry tint-peach" id="springboot">
+        <div>
+          <span class="project-label">Backend · Java · Security</span>
+          <h2 class="project-entry-title">Spring Boot User Authentication API</h2>
+          <p class="project-summary">
+            A production-ready Spring Boot 3 REST API with JWT authentication and refresh tokens,
+            role-based access control (USER / ADMIN), BCrypt password hashing, and protected
+            file upload endpoints — built using Spring Security with a clean layered architecture.
+            Enables seamless authentication flows, payment tokenisation, and fraud & risk
+            management integrations.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Spring Boot 3</span>
+            <span class="tech-tag">Spring Security</span>
+            <span class="tech-tag">JWT</span>
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">BCrypt</span>
+            <span class="tech-tag">RBAC</span>
+          </div>
+        </div>
+        <span class="project-arrow">↗</span>
+      </a>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <p>Made with ♡ by Sucharitha B &nbsp;·&nbsp;
+      <a href="https://github.com/Hackerette0" class="footer-link" target="_blank" rel="noopener">GitHub</a> &nbsp;·&nbsp;
+      <a href="https://www.linkedin.com/in/sucharitha-b-8519b2259/" class="footer-link" target="_blank" rel="noopener">LinkedIn</a> &nbsp;·&nbsp;
+      <a href="https://leetcode.com/u/bathalasucharitha79/" class="footer-link" target="_blank" rel="noopener">LeetCode</a>
+    </p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experience — Sucharitha B</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=Caveat:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ── Featured internship card ── */
+    .exp-feature {
+      background: #fce9e9;
+      border-radius: 24px;
+      padding: 44px;
+      margin-bottom: 56px;
+    }
+    .exp-feature-label {
+      font-family: var(--hand);
+      font-size: 1rem;
+      color: #b86060;
+      display: block;
+      margin-bottom: 12px;
+    }
+    .exp-feature-title {
+      font-family: var(--serif);
+      font-size: clamp(1.6rem, 4vw, 2.2rem);
+      font-weight: 500;
+      line-height: 1.2;
+      margin-bottom: 6px;
+    }
+    .exp-feature-location {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+    .exp-feature-body { font-size: 0.95rem; line-height: 1.8; color: var(--text); }
+    .exp-feature-body p + p { margin-top: 14px; }
+
+    .exp-highlights {
+      display: flex;
+      gap: 16px;
+      margin-top: 28px;
+      flex-wrap: wrap;
+    }
+    .highlight {
+      background: rgba(255,255,255,0.65);
+      border-radius: 16px;
+      padding: 18px 24px;
+      flex: 1;
+      min-width: 120px;
+    }
+    .highlight-num {
+      font-family: var(--serif);
+      font-size: 1.9rem;
+      color: #b86060;
+      line-height: 1;
+      font-weight: 500;
+    }
+    .highlight-label {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-top: 5px;
+    }
+
+    /* ── Other internships ── */
+    .exp-list { display: flex; flex-direction: column; margin-bottom: 64px; }
+    .exp-entry {
+      padding: 38px 0;
+      border-bottom: 1px solid var(--border);
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 32px;
+      align-items: start;
+    }
+    .exp-entry:first-child { border-top: 1px solid var(--border); }
+
+    .exp-period { font-size: 0.8rem; color: var(--muted); line-height: 1.5; }
+    .exp-company {
+      font-family: var(--hand);
+      font-size: 1rem;
+      color: var(--accent);
+      margin-top: 6px;
+    }
+    .exp-role {
+      font-family: var(--serif);
+      font-size: 1.3rem;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+    .exp-body { font-size: 0.9rem; color: var(--muted); line-height: 1.75; }
+
+    /* ── Education card ── */
+    .edu-card {
+      background: #eae8f5;
+      border-radius: 24px;
+      padding: 40px;
+      margin-bottom: 80px;
+    }
+    .edu-label {
+      font-family: var(--hand);
+      font-size: 1rem;
+      color: #6850a0;
+      display: block;
+      margin-bottom: 14px;
+    }
+    .edu-degree {
+      font-family: var(--serif);
+      font-size: 1.5rem;
+      font-weight: 500;
+      line-height: 1.3;
+      margin-bottom: 8px;
+    }
+    .edu-school { font-size: 0.88rem; color: var(--muted); margin-bottom: 24px; }
+    .edu-stats { display: flex; gap: 40px; flex-wrap: wrap; }
+    .edu-stat-val { font-family: var(--serif); font-size: 1.4rem; color: #6850a0; font-weight: 500; }
+    .edu-stat-label { font-size: 0.78rem; color: var(--muted); margin-top: 3px; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Sucharitha ✿</a>
+    <ul class="nav-links">
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="mailto:bathalasucharitha79@gmail.com">Say hello ✉︎</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+
+    <header class="page-header">
+      <span class="page-deco">✦ Where I've worked & what I've built</span>
+      <h1 class="page-title">Experience</h1>
+      <p class="page-desc">Three internships across full-stack development and AI/ML — each one teaching me something different about building software that works in the real world.</p>
+    </header>
+
+    <!-- Featured: HCL -->
+    <div class="exp-feature">
+      <span class="exp-feature-label">Most recent · Software Development Intern · Aug – Dec 2025</span>
+      <h2 class="exp-feature-title">Four months at HCL Technologies</h2>
+      <div class="exp-feature-location">Chennai, TN &nbsp;·&nbsp; 4 months</div>
+      <div class="exp-feature-body">
+        <p>
+          At HCL, I built an end-to-end productivity monitoring system for software testers.
+          The stack combined an Angular/ReactJS frontend with a Python backend, using screen
+          recording to capture and analyse tester activity in real time.
+        </p>
+        <p>
+          I owned the secure API integrations, optimised Python processing scripts, and built
+          the frontend dashboards for visualising productivity metrics. The system went into
+          production and delivered measurable results — both in team output and application speed.
+        </p>
+      </div>
+      <div class="exp-highlights">
+        <div class="highlight">
+          <div class="highlight-num">13%</div>
+          <div class="highlight-label">Productivity increase</div>
+        </div>
+        <div class="highlight">
+          <div class="highlight-num">10%</div>
+          <div class="highlight-label">Faster app performance</div>
+        </div>
+        <div class="highlight">
+          <div class="highlight-num">4 mo</div>
+          <div class="highlight-label">Internship duration</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Other internships -->
+    <div class="exp-list">
+
+      <div class="exp-entry">
+        <div>
+          <div class="exp-period">May – Aug 2024</div>
+          <div class="exp-company">SystemTron</div>
+        </div>
+        <div>
+          <h3 class="exp-role">AI / ML Intern</h3>
+          <p class="exp-body">
+            Completed an AICTE-certified AI/ML internship — hands-on work with machine learning
+            algorithms, deep learning architectures, and data analysis pipelines using Python,
+            TensorFlow, and real-world datasets. Built a strong practical foundation in the AI/ML
+            stack that I carry into every project today.
+          </p>
+        </div>
+      </div>
+
+      <div class="exp-entry">
+        <div>
+          <div class="exp-period">May – Aug 2023</div>
+          <div class="exp-company">Saanvi × Roarke<br>Construction</div>
+        </div>
+        <div>
+          <h3 class="exp-role">Software Development Intern</h3>
+          <p class="exp-body">
+            My first production engineering environment. Contributed to front-end web application
+            development as part of a cross-functional team — building and maintaining UI components,
+            collaborating with senior engineers, and developing real problem-solving discipline
+            under mentorship.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Education -->
+    <div class="edu-card">
+      <span class="edu-label">✦ Education</span>
+      <h2 class="edu-degree">BTech Computer Science<br><em style="font-style:italic">(Artificial Intelligence & Machine Learning)</em></h2>
+      <div class="edu-school">Sri Ramachandra Faculty of Engineering and Technology · Chennai, India · Graduating May 2026</div>
+      <div class="edu-stats">
+        <div>
+          <div class="edu-stat-val">7.8</div>
+          <div class="edu-stat-label">CGPA</div>
+        </div>
+        <div>
+          <div class="edu-stat-val">2022 – 2026</div>
+          <div class="edu-stat-label">Duration</div>
+        </div>
+        <div>
+          <div class="edu-stat-val">No arrears</div>
+          <div class="edu-stat-label">Academic standing</div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>Made with ♡ by Sucharitha B &nbsp;·&nbsp;
+      <a href="https://github.com/Hackerette0" class="footer-link" target="_blank" rel="noopener">GitHub</a> &nbsp;·&nbsp;
+      <a href="https://www.linkedin.com/in/sucharitha-b-8519b2259/" class="footer-link" target="_blank" rel="noopener">LinkedIn</a> &nbsp;·&nbsp;
+      <a href="https://leetcode.com/u/bathalasucharitha79/" class="footer-link" target="_blank" rel="noopener">LeetCode</a>
+    </p>
+  </footer>
+
+</body>
+</html>

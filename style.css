@@ -1,0 +1,209 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #faf8f4;
+  --warm-white: #fffefb;
+  --text: #2c2420;
+  --muted: #9c8c84;
+  --border: rgba(0,0,0,0.08);
+  --accent: #b87878;
+  --serif: 'Lora', Georgia, serif;
+  --sans: 'DM Sans', system-ui, sans-serif;
+  --hand: 'Caveat', cursive;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.7;
+  min-height: 100vh;
+}
+a { color: inherit; }
+
+/* ── Nav ─────────────────────────────────── */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 48px;
+  border-bottom: 1px solid var(--border);
+  background: var(--warm-white);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.nav-logo {
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: var(--text);
+  text-decoration: none;
+}
+.nav-links { display: flex; gap: 28px; list-style: none; }
+.nav-links a {
+  font-size: 0.88rem;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--accent); }
+
+/* ── Container ───────────────────────────── */
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* ── Inline links ────────────────────────── */
+.inline-link {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-color: rgba(184,120,120,0.35);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.2s;
+}
+.inline-link:hover { text-decoration-color: var(--accent); }
+
+/* ── Section headings ────────────────────── */
+.section-heading {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 24px;
+}
+
+/* ── Cards ───────────────────────────────── */
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.card {
+  border-radius: 24px;
+  padding: 28px;
+  text-decoration: none;
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.1);
+}
+.card-pink     { background: #fce9e9; }
+.card-sage     { background: #e5ede0; }
+.card-lavender { background: #eae8f5; }
+.card-peach    { background: #fdebd8; }
+
+.card-label {
+  font-family: var(--hand);
+  font-size: 0.95rem;
+  color: var(--muted);
+  font-weight: 500;
+}
+.card-pink     .card-label { color: #b86060; }
+.card-sage     .card-label { color: #5e7a50; }
+.card-lavender .card-label { color: #6850a0; }
+.card-peach    .card-label { color: #b07040; }
+
+.card-title {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+.card-desc {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.65;
+  flex: 1;
+}
+.card-cta { font-size: 0.82rem; font-weight: 500; margin-top: 4px; }
+.card-pink     .card-cta { color: #b86060; }
+.card-sage     .card-cta { color: #5e7a50; }
+.card-lavender .card-cta { color: #6850a0; }
+.card-peach    .card-cta { color: #b07040; }
+
+/* ── Tag pills ───────────────────────────── */
+.tags-cloud { display: flex; flex-wrap: wrap; gap: 10px; }
+.tag-pill {
+  display: inline-block;
+  padding: 7px 16px;
+  border-radius: 100px;
+  border: 1px solid var(--border);
+  font-size: 0.83rem;
+  color: var(--muted);
+  text-decoration: none;
+  background: var(--warm-white);
+  transition: all 0.2s;
+}
+.tag-pill:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: #fdf5f5;
+}
+
+/* ── Page header (subpages) ──────────────── */
+.page-header {
+  padding: 64px 0 48px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 48px;
+}
+.page-deco {
+  font-family: var(--hand);
+  font-size: 1rem;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 12px;
+}
+.page-title {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+.page-desc {
+  font-size: 1rem;
+  color: var(--muted);
+  max-width: 540px;
+  line-height: 1.7;
+}
+
+/* ── Footer ──────────────────────────────── */
+footer {
+  margin-top: 80px;
+  border-top: 1px solid var(--border);
+  padding: 28px 48px;
+  text-align: center;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+.footer-link {
+  color: var(--muted);
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: text-decoration-color 0.2s, color 0.2s;
+}
+.footer-link:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+
+/* ── Responsive ──────────────────────────── */
+@media (max-width: 700px) {
+  nav { padding: 16px 20px; }
+  .nav-links { gap: 16px; }
+  .nav-links a { font-size: 0.78rem; }
+  .container { padding: 0 20px; }
+  .cards-grid { grid-template-columns: 1fr; }
+  footer { padding: 24px 20px; }
+}
