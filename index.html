@@ -180,6 +180,26 @@
     .read-more-btn:hover { background: var(--text); color: var(--bg); transform: translateY(-2px); }
     .read-more-btn:active { transform: scale(0.97); }
 
+    .hero-btns { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; justify-content: center; }
+
+    .resume-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 11px 30px;
+      border-radius: 100px;
+      font-family: var(--sans);
+      font-size: 0.88rem;
+      background: var(--text);
+      color: var(--bg);
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.25s, color 0.25s, transform 0.2s, box-shadow 0.2s;
+      animation: fadeDown 0.8s 0.5s both;
+    }
+    .resume-btn:hover { background: #3d3530; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.18); }
+    .resume-btn:active { transform: scale(0.97); }
+
     /* ══════════════════════════════════════
        SCROLL REVEAL
     ══════════════════════════════════════ */
@@ -520,7 +540,13 @@
       explores <a href="#skills-section">AI&nbsp;&amp;&nbsp;machine&nbsp;learning</a>
       and ships things that actually&nbsp;work.
     </h1>
-    <a href="#about" class="read-more-btn">Read more</a>
+    <div class="hero-btns">
+      <a href="#about" class="read-more-btn">Read more</a>
+      <a href="Resume.pdf" download="Sucharitha_B_Resume.pdf" class="resume-btn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download CV
+      </a>
+    </div>
   </main>
 
   <!-- Right icons -->
@@ -788,6 +814,10 @@
       <a href="https://leetcode.com/u/bathalasucharitha79/" class="contact-link" target="_blank" rel="noopener">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m16 18 2 2 4-4"/><path d="M21 10.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7.5"/><path d="M3 10h18"/></svg>
         LeetCode
+      </a>
+      <a href="Resume.pdf" download="Sucharitha_B_Resume.pdf" class="contact-link" style="border-color:var(--text);font-weight:500">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download CV
       </a>
     </div>
   </div>
