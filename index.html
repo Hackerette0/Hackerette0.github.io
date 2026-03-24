@@ -264,7 +264,7 @@
     ══════════════════════════════════════ */
     .projects-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 16px;
     }
     .proj-card {
@@ -282,10 +282,49 @@
     .proj-card.pink  { background: #fce9e9; }
     .proj-card.sage  { background: #e5ede0; }
     .proj-card.peach { background: #fdebd8; }
+    .proj-card.blue  { background: #dfe6f5; }
     .proj-num { font-size: 0.72rem; letter-spacing: 0.1em; }
     .pink  .proj-num { color: #b86060; }
     .sage  .proj-num { color: #5e7a50; }
     .peach .proj-num { color: #b07040; }
+    .blue  .proj-num { color: #3a58a8; }
+
+    .proj-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.7rem;
+      font-weight: 500;
+      color: #3a58a8;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .proj-status::before {
+      content: '';
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: #3a58a8;
+      animation: statusPulse 2s ease-in-out infinite;
+    }
+    @keyframes statusPulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50%       { opacity: 0.4; transform: scale(0.8); }
+    }
+
+    .proj-paper-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.78rem;
+      color: #3a58a8;
+      text-decoration: underline;
+      text-decoration-color: rgba(58,88,168,0.35);
+      text-underline-offset: 3px;
+      transition: text-decoration-color 0.2s;
+      margin-top: 4px;
+      width: fit-content;
+    }
+    .proj-paper-link:hover { text-decoration-color: #3a58a8; }
     .proj-title { font-family: var(--serif); font-size: 1.15rem; font-weight: 500; line-height: 1.25; }
     .proj-desc { font-size: 0.85rem; color: var(--muted); line-height: 1.7; flex: 1; }
     .proj-tags { display: flex; flex-wrap: wrap; gap: 7px; }
@@ -641,6 +680,25 @@
         <span class="proj-tag">JWT</span>
         <span class="proj-tag">Java</span>
       </div>
+    </div>
+
+    <div class="proj-card blue">
+      <span class="proj-num">04</span>
+      <span class="proj-status">In Progress · Final Year Project</span>
+      <h3 class="proj-title">Distributed Container Orchestration Engine</h3>
+      <p class="proj-desc">A mini Kubernetes built from scratch — implements Raft consensus for leader election, a custom predictive scheduler with resource forecasting & anti-affinity rules, automatic self-healing, and a React dashboard for real-time cluster monitoring. Built at WebSyncz Technology across 6 months.</p>
+      <div class="proj-tags">
+        <span class="proj-tag">Python</span>
+        <span class="proj-tag">Docker</span>
+        <span class="proj-tag">Raft Consensus</span>
+        <span class="proj-tag">React</span>
+        <span class="proj-tag">TypeScript</span>
+        <span class="proj-tag">Distributed Systems</span>
+      </div>
+      <a href="FinalYearProject.pdf" target="_blank" class="proj-paper-link">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        Read project report
+      </a>
     </div>
 
   </div>
