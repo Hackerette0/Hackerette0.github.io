@@ -279,9 +279,12 @@
       transition: transform 0.28s ease, box-shadow 0.28s ease;
     }
     .proj-card:hover { transform: translateY(-5px); box-shadow: 0 16px 44px rgba(0,0,0,0.09); }
-    .proj-card.pink  { background: #fce9e9; }
-    .proj-card.sage  { background: #e5ede0; }
-    .proj-card.peach { background: #fdebd8; }
+    .proj-card.pink     { background: #fce9e9; }
+    .proj-card.sage     { background: #e5ede0; }
+    .proj-card.peach    { background: #fdebd8; }
+    .proj-card.sky      { background: #e0edf8; }
+    .proj-card.lavender { background: #ede8f8; }
+    .proj-card.gold     { background: #fdf3dc; }
     .proj-card.blue  { background: #dfe6f5; }
     .proj-num { font-size: 0.72rem; letter-spacing: 0.1em; }
     .pink  .proj-num { color: #b86060; }
@@ -664,8 +667,56 @@
       </a>
     </div>
 
-    <div class="proj-card pink">
+    <div class="proj-card sky">
       <span class="proj-num">02</span>
+      <h3 class="proj-title">le plan — AI Life Manager</h3>
+      <p class="proj-desc">Energy-aware daily planner powered by Claude Opus — checks your mood, sleep & energy before generating your day. Includes a Pomodoro timer, habit streaks, colour-coded notes, and integrations with GitHub, Notion & Google Calendar.</p>
+      <div class="proj-tags">
+        <span class="proj-tag">Next.js 15</span>
+        <span class="proj-tag">TypeScript</span>
+        <span class="proj-tag">Claude API</span>
+        <span class="proj-tag">Tailwind CSS</span>
+        <span class="proj-tag">Netlify</span>
+      </div>
+      <a href="https://github.com/Hackerette0/AI-life-manager" target="_blank" rel="noopener" class="proj-paper-link">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+        View on GitHub
+      </a>
+    </div>
+
+    <div class="proj-card lavender">
+      <span class="proj-num">03</span>
+      <h3 class="proj-title">SocialFlow — AI Social Media Scheduler</h3>
+      <p class="proj-desc">Multi-platform scheduler with AI caption generation (Mistral-7B), optimal posting time recommendations, a 31-day content calendar, hashtag engine, and automated publishing across Instagram, LinkedIn, Twitter & Facebook.</p>
+      <div class="proj-tags">
+        <span class="proj-tag">Next.js 14</span>
+        <span class="proj-tag">FastAPI</span>
+        <span class="proj-tag">Supabase</span>
+        <span class="proj-tag">Mistral-7B</span>
+        <span class="proj-tag">Python</span>
+      </div>
+      <a href="https://github.com/Hackerette0/Social-media-scheduler" target="_blank" rel="noopener" class="proj-paper-link">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+        View on GitHub
+      </a>
+    </div>
+
+    <div class="proj-card gold">
+      <span class="proj-num">04</span>
+      <h3 class="proj-title">CryptoTrade Pro</h3>
+      <p class="proj-desc">Full-stack crypto trading platform with real-time WebSocket price streams from Binance, multi-exchange order placement, live order book, portfolio P&L tracking, advanced analytics, and Stripe subscription billing.</p>
+      <div class="proj-tags">
+        <span class="proj-tag">React 18</span>
+        <span class="proj-tag">Node.js</span>
+        <span class="proj-tag">MongoDB</span>
+        <span class="proj-tag">WebSockets</span>
+        <span class="proj-tag">Binance API</span>
+        <span class="proj-tag">Stripe</span>
+      </div>
+    </div>
+
+    <div class="proj-card pink">
+      <span class="proj-num">05</span>
       <h3 class="proj-title">Ōly — AI Luxury Skincare Platform</h3>
       <p class="proj-desc">Full-stack MERN platform with real-time skin analysis, RAG-based personalised recommendations, an AI Skin Diary with progress charts, and an AI-moderated community forum.</p>
       <div class="proj-tags">
@@ -678,7 +729,7 @@
     </div>
 
     <div class="proj-card sage">
-      <span class="proj-num">03</span>
+      <span class="proj-num">06</span>
       <h3 class="proj-title">RASA Medical Chatbot</h3>
       <p class="proj-desc">AI-powered healthcare chatbot using RASA & TensorFlow — 85% accurate disease prediction with NLP-driven responses and automatic anomaly detection.</p>
       <div class="proj-tags">
@@ -690,7 +741,7 @@
     </div>
 
     <div class="proj-card peach">
-      <span class="proj-num">04</span>
+      <span class="proj-num">07</span>
       <h3 class="proj-title">Spring Boot Auth API</h3>
       <p class="proj-desc">Production-ready REST API with JWT authentication, refresh tokens, RBAC (USER/ADMIN), BCrypt hashing, and protected file upload endpoints — secure by design.</p>
       <div class="proj-tags">
