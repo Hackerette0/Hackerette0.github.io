@@ -403,6 +403,24 @@
     }
     .tag-pill:hover { border-color:var(--accent); color:var(--accent); transform:translateY(-1px); }
 
+    /* ── Older projects list ─────────────── */
+    .older-label {
+      font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase;
+      color: var(--muted); margin: 40px 0 20px;
+    }
+    .older-list { display: flex; flex-direction: column; }
+    .older-entry {
+      display: flex; justify-content: space-between; align-items: center;
+      gap: 24px; padding: 18px 0; border-bottom: 1px solid var(--border);
+      transition: padding-left 0.2s;
+    }
+    .older-entry:first-child { border-top: 1px solid var(--border); }
+    .older-entry:hover { padding-left: 10px; }
+    .older-left { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+    .older-title { font-family: var(--serif); font-size: 1rem; font-weight: 500; }
+    .older-desc  { font-size: 0.82rem; color: var(--muted); line-height: 1.5; }
+    .older-tags  { display: flex; flex-wrap: wrap; gap: 6px; flex-shrink: 0; }
+
     .cert-item {
       display:flex; justify-content:space-between; align-items:center;
       padding:22px 0; border-bottom:1px solid var(--border); gap:20px;
@@ -715,11 +733,18 @@
       </div>
     </div>
 
-    <div class="proj-card pink">
-      <span class="proj-num">05</span>
-      <h3 class="proj-title">Ōly — AI Luxury Skincare Platform</h3>
-      <p class="proj-desc">Full-stack MERN platform with real-time skin analysis, RAG-based personalised recommendations, an AI Skin Diary with progress charts, and an AI-moderated community forum.</p>
-      <div class="proj-tags">
+  </div>
+
+  <!-- Older projects list -->
+  <div class="older-label reveal">Also built</div>
+  <div class="older-list stagger">
+
+    <div class="older-entry">
+      <div class="older-left">
+        <span class="older-title">Ōly — AI Luxury Skincare Platform</span>
+        <span class="older-desc">Full-stack MERN app with real-time skin analysis, RAG recommendations & AI Skin Diary.</span>
+      </div>
+      <div class="older-tags">
         <span class="proj-tag">React</span>
         <span class="proj-tag">Node.js</span>
         <span class="proj-tag">MongoDB</span>
@@ -728,11 +753,12 @@
       </div>
     </div>
 
-    <div class="proj-card sage">
-      <span class="proj-num">06</span>
-      <h3 class="proj-title">RASA Medical Chatbot</h3>
-      <p class="proj-desc">AI-powered healthcare chatbot using RASA & TensorFlow — 85% accurate disease prediction with NLP-driven responses and automatic anomaly detection.</p>
-      <div class="proj-tags">
+    <div class="older-entry">
+      <div class="older-left">
+        <span class="older-title">RASA Medical Chatbot</span>
+        <span class="older-desc">AI healthcare chatbot with 85% disease prediction accuracy using RASA & TensorFlow.</span>
+      </div>
+      <div class="older-tags">
         <span class="proj-tag">RASA</span>
         <span class="proj-tag">TensorFlow</span>
         <span class="proj-tag">NLP</span>
@@ -740,11 +766,12 @@
       </div>
     </div>
 
-    <div class="proj-card peach">
-      <span class="proj-num">07</span>
-      <h3 class="proj-title">Spring Boot Auth API</h3>
-      <p class="proj-desc">Production-ready REST API with JWT authentication, refresh tokens, RBAC (USER/ADMIN), BCrypt hashing, and protected file upload endpoints — secure by design.</p>
-      <div class="proj-tags">
+    <div class="older-entry">
+      <div class="older-left">
+        <span class="older-title">Spring Boot Auth API</span>
+        <span class="older-desc">Production-ready REST API with JWT, refresh tokens, RBAC & BCrypt — secure by design.</span>
+      </div>
+      <div class="older-tags">
         <span class="proj-tag">Spring Boot 3</span>
         <span class="proj-tag">Spring Security</span>
         <span class="proj-tag">JWT</span>
